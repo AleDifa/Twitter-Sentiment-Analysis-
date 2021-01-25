@@ -11,7 +11,7 @@ Please enter how many tweets to analyze: 75
 @SteveSchmidtSES @POTUS If he had worn his similarly priced Omega Speedmas<br>....
 
 ```
-function for clean text 
+function for clean text, with re.sub clean all punctuation in tweets 
 def clean_text(Text):
     Text = re.sub('@[\w]+', "", str(Text))
     Text = re.sub(r"[^a-zA-Z]", " ", str(Text))
@@ -40,13 +40,14 @@ plt.ylabel('Subjectivity')
 <img width="334" alt="3" src="https://user-images.githubusercontent.com/37181764/105694463-490b1080-5f01-11eb-9aa8-2163a58047d8.PNG">
 
 ```
+plot number the count of value with bar chart
 df['rating'].value_counts().plot(kind = 'bar')
 plt.show()
 ```
 <img width="338" alt="4" src="https://user-images.githubusercontent.com/37181764/105695460-68566d80-5f02-11eb-9ca1-8be4df733e27.PNG">
 
 ```
-Tokenization our 4 dataframe: principal df,  Positive, Negative, Neutral
+Tokenization our dataframe
 df['tokenized_sents'] = df.apply(lambda row: nltk.word_tokenize(row['cleaning_tweets']), axis=1
 ```
 <img width="555" alt="5" src="https://user-images.githubusercontent.com/37181764/105696065-1c57f880-5f03-11eb-8a82-0cae650f8697.PNG">
@@ -62,7 +63,7 @@ Clean_df_counts_no_urls.sort_values(by='count').plot.barh(x='words',
 <img width="421" alt="6" src="https://user-images.githubusercontent.com/37181764/105696385-87a1ca80-5f03-11eb-8d9e-a20d4b1ca255.PNG">
 
 ```
-n3_trigram
+An n-gram is a subsequence of n (n°3 trigram) elements of a given sequence
 n3_trigrams = get_top_n_gram(df['cleaning_tweets'],(3,3),20)
 ```
 
