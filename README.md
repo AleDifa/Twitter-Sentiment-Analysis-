@@ -31,4 +31,13 @@ df["polarity"]=df["cleaning_tweets"].apply(polarity)
 ```
 <img width="700" alt="2" src="https://user-images.githubusercontent.com/37181764/105694206-f4679580-5f00-11eb-9e58-bc07680904df.PNG">
 
+```
+Plot scatter visualization for see the Polarity of Tweets
+plt.scatter(df.polarity, df.subjectivity, color='Blue')
+plt.xlabel('Polarity') 
+plt.ylabel('Subjectivity') 
+```
+
+
+
 
