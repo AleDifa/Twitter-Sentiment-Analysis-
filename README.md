@@ -14,3 +14,4 @@ Please enter how many tweets to analyze: 75
 df["cleaning_tweets"]=df["Tweets"].apply(clean_text)
 df.head(5)
 ```
+<img width="562" alt="1" src="https://user-images.githubusercontent.com/37181764/105693377-ef561680-5eff-11eb-929e-7cb78a5cc42a.PNG">
