@@ -11,7 +11,24 @@ Please enter how many tweets to analyze: 75
 @SteveSchmidtSES @POTUS If he had worn his similarly priced Omega Speedmas<br>....
 
 ```
-df["cleaning_tweets"]=df["Tweets"].apply(clean_text)
-df.head(5)
+function for clean text 
+def clean_text(Text):
+    Text = re.sub('@[\w]+', "", str(Text))
+    Text = re.sub(r"[^a-zA-Z]", " ", str(Text))
+    Text = re.sub(r"#", " ", str(Text))
+    Text = re.sub(r"rt[\s]+", " ", str(Text))
+    Text = re.sub(r"http\S+", " ", str(Text))
+    return Text
 ```
 <img width="562" alt="1" src="https://user-images.githubusercontent.com/37181764/105693377-ef561680-5eff-11eb-929e-7cb78a5cc42a.PNG">
+
+```
+Sentiment Analysis: Polarity ranges from -1 (most negative) to 1 (most positive)
+def polarity (cleaning_tweets):
+    text = TextBlob(cleaning_tweets).sentiment.polarity
+    return text
+df["polarity"]=df["cleaning_tweets"].apply(polarity)
+```
+
+
+
