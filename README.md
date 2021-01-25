@@ -43,3 +43,6 @@ plt.ylabel('Subjectivity')
 df['rating'].value_counts().plot(kind = 'bar')
 plt.show()
 ```
+<img width="338" alt="4" src="https://user-images.githubusercontent.com/37181764/105695460-68566d80-5f02-11eb-9ca1-8be4df733e27.PNG">
+
+
