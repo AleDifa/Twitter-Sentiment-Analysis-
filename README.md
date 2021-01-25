@@ -37,7 +37,7 @@ plt.scatter(df.polarity, df.subjectivity, color='Blue')
 plt.xlabel('Polarity') 
 plt.ylabel('Subjectivity') 
 ```
-
+<img width="334" alt="3" src="https://user-images.githubusercontent.com/37181764/105694463-490b1080-5f01-11eb-9aa8-2163a58047d8.PNG">
 
 
 
