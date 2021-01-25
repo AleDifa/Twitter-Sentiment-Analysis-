@@ -49,4 +49,7 @@ plt.show()
 Tokenization our 4 dataframe: principal df,  Positive, Negative, Neutral
 df['tokenized_sents'] = df.apply(lambda row: nltk.word_tokenize(row['cleaning_tweets']), axis=1
 ```
+<img width="555" alt="5" src="https://user-images.githubusercontent.com/37181764/105696065-1c57f880-5f03-11eb-8a82-0cae650f8697.PNG">
+
+
 
