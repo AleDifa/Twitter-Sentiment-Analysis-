@@ -10,8 +10,8 @@ Please enter how many tweets to analyze: 75
 #omega #speedmaster #351050 #sold to #collector in #evanston #il - more #watches #forsale at #watchvaultnyc...<br> 
 @SteveSchmidtSES @POTUS If he had worn his similarly priced Omega Speedmas<br>....
 
-```python
 function for clean text, with re.sub clean all punctuation in tweets 
+```python
 def clean_text(Text):
     Text = re.sub('@[\w]+', "", str(Text))
     Text = re.sub(r"[^a-zA-Z]", " ", str(Text))
