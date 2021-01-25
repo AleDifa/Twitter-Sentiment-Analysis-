@@ -64,6 +64,7 @@ Clean_df_counts_no_urls.sort_values(by='count').plot.barh(x='words',
 n3_trigram
 n3_trigrams = get_top_n_gram(df['cleaning_tweets'],(3,3),20)
 ```
+
 <img width="236" alt="7" src="https://user-images.githubusercontent.com/37181764/105696593-cfc0ed00-5f03-11eb-9146-041263c44279.PNG">
 
 
