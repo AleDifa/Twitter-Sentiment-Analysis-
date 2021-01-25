@@ -29,6 +29,6 @@ def polarity (cleaning_tweets):
     return text
 df["polarity"]=df["cleaning_tweets"].apply(polarity)
 ```
-
+<img width="700" alt="2" src="https://user-images.githubusercontent.com/37181764/105694206-f4679580-5f00-11eb-9e58-bc07680904df.PNG">
 
 
